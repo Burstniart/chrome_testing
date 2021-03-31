@@ -2,13 +2,24 @@
     "name": "Page Greenner",
     "action": {},
     "version": "2.1",
-    "description": "Changed to V3 for educational purposes",
+    "description": "Clicking will change page green, Alt+Shift+P will pin current tab",
     "permissions": [
       "activeTab",
-      "scripting"
+      "scripting",
+      "tabs"
     ],
     "background": {
       "service_worker": "background.js"
     },
-    "manifest_version": 3
+    "manifest_version": 3,
+    "commands": {
+      "toggle-pin": {
+        "suggested_key": { "default": "Alt+Shift+P" },
+        "description": "Tooggle tab pin"
+      },
+      "alert_shortcut": {
+        "suggested_key": { "default": "Alt+Shift+Q" },
+        "description": "Alert shortcut was executed"
+      }
+    }
   }
