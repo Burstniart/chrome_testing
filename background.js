@@ -1,6 +1,10 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-    console.log('Turning ' + tab.url + ' green!');
+function greennenPage() {
+    document.body.style.backgroundColor = "green";
+}
+
+chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript({
-        code: document.body.style.backgroundColor="green"
+        target: {tabId: tab.id},
+        function: greennenPage,
     });
-});
+  });
