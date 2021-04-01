@@ -5,6 +5,8 @@ function alertMe() {
     alert("Activated a shortcut")
 }
 
+// without a popup clicking on the icon will autoatically execute
+// the following code
 chrome.action.onClicked.addListener((tab) => {
     console.log('Turning ' + tab.url + ' green!');
     chrome.scripting.executeScript({
