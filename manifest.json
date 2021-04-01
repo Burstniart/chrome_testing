@@ -1,7 +1,7 @@
 {
     "name": "Page Greenner",
     "action": {},
-    "version": "2.1",
+    "version": "2.2",
     "description": "Clicking will change page green, Alt+Shift+P will pin current tab",
     "permissions": [
       "activeTab",
@@ -18,7 +18,7 @@
         "description": "Tooggle tab pin"
       },
       "alert_shortcut": {
-        "suggested_key": { "default": "Alt+Shift+Q" },
+        "suggested_key": { "default": "Alt+Shift+0" },
         "description": "Alert shortcut was executed"
       }
     }

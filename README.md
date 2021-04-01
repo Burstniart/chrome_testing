@@ -10,3 +10,7 @@
 # now i can see the url from the tab my extension is executed from by clicking it with chrome.action.onClicked.addListener
 
 # experience problems for executing another command from a shortcut, further investigation is required
+
+# edit 01/04/2021
+# succesfully added a console.log including current url for pinned tab, found out current variable is a tab value, in wich tab methods can be applied, such as .url
+! STydu posponed due to a call from work, resume at user interface from devs exetension guide, goodspeed, Burstniart

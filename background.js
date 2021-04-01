@@ -20,13 +20,11 @@ chrome.action.onClicked.addListener((tab) => {
             // Toggle the pinned status
             var current = tabs[0]
             chrome.tabs.update(current.id, {'pinned': !current.pinned});
-          })
+            console.log("Pinned current tab: " + current.url)
+          });
       }// currently experimenting dificulties executing another shortcut command
-      /* else if (command == "alert_shortcut") {
-          chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-              var current = tabs[0]
-              chrome.tabs.update(current.id, {'pinned': !current.pinned});
-          })
-      } */
+        else if (command === "alert_shortcut") {
+            console.log("You pressed a shortcut");
+      } 
   });
 
