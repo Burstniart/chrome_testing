@@ -1,0 +1,23 @@
+{
+    "name": "Specific Page Greenner",
+    "version": "0.0.1",
+    "description": "Turns the page green when you click the icon on specific url",
+    "background": {
+        "service_worker": "background.js",
+        "persistent": false
+    },
+    "action": {
+        "default_title": "github is in the title",
+        "default_icon": "icon-19.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "declarativeContent"
+    ],
+    "icons": {
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "manifest_version": 3
+}
