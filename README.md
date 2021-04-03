@@ -19,3 +19,8 @@
 # learned about the migrations of browser action to acton in manifest v3
 # added popup.html and popup.js as part of thee badge adition to handle events as button click from the pop up, which now turn on the badge's text and display 'ON' with green background and 'OFF' with red background
 # added icons to the manifest.json
+# edit 02/04/2021
+# testing onInstalled and onChanged for page handlers, currently can't figure out where to apply the code for turning background color to green when clicking in icon from the extension, this should work as an alternativve from the previous conflict between adding a default popup that causes the action.inListener event to be ommited, 
+# working on an alternative extension that's located in test folder as test, so i can handle the event without commenting and compromising the current test board that is chrome ext testing,
+# further test from this subjected should continue in test file
+# new repository, or at least a new branch should be added to the repository

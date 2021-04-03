@@ -5,7 +5,8 @@
     "permissions": [
       "activeTab",
       "scripting",
-      "tabs"
+      "tabs",
+      "declarativeContent"
     ],
     "background": {
       "service_worker": "background.js"
@@ -22,7 +23,7 @@
       }
     },
      "action": {
-      "default_title": "Test icon and badge",
+      "default_title": "Test icon,badge on specific url",
       "default_popup": "popup.html"
     }, 
     "icons": {
