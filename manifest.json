@@ -16,10 +16,6 @@
       "toggle-pin": {
         "suggested_key": { "default": "Alt+Shift+P" },
         "description": "Tooggle tab pin"
-      },
-      "alert_shortcut": {
-        "suggested_key": { "default": "Alt+Shift+0" },
-        "description": "Alert shortcut was executed"
       }
     },
      "action": {

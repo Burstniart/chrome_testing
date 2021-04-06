@@ -24,26 +24,7 @@ chrome.action.onClicked.addListener((tab) => {
             chrome.tabs.update(current.id, {'pinned': !current.pinned});
             console.log("Pinned current tab: " + current.url)
           });
-      }// currently experimenting dificulties executing another shortcut command
-        else if (command === "alert_shortcut") {
-            console.log("You pressed a shortcut");
       } 
   });
 
-chrome.runtime.onInstalled.addListener(function() {
-
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-
-        chrome.declarativeContent.onPageChanged.addRules([
-            {
-                conditions: [
-                    new.chrome.declarativeContent.PageStateMatcher({
-                        pageUrl: {urlContains: 'github'},
-                    })
-                ],
-                actions: [ new chrome.declarativeContent.ShowPAgeAction()]
-            }
-        ]);
-    });
-});
 
