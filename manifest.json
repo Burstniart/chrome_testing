@@ -3,11 +3,10 @@
     "version": "0.0.1",
     "description": "Turns the page green when you click the icon on specific url",
     "background": {
-        "service_worker": "background.js",
-        "persistent": false
+        "service_worker":"background.js"
     },
     "action": {
-        "default_title": "github is in the title",
+        "default_title": "specific site",
         "default_icon": "icon-19.png"
     },
     "permissions": [
